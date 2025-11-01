@@ -11,7 +11,7 @@ import pandas as pd
 
 # Create data as a list of dictionaries
 # Each dictionary represents one member
-data = [
+Team_info = [
     {"Name": "Chioma Nnadi", "Slack_username": "Chioma", "Country": "Nigeria", "Hobby": "Writing", "Affiliation": "None", "Fav_gene": "BRCA1", "Fav_gene_ID": "672", "Fav_gene_sequence": "GCTGAGACTTCCTGGACGGGGGACAGGCTGTGGGGTTTCTCAGATAACTGGGCCCCTGCGCTCAGGAGGC","LinkedIN_ID": "https://www.linkedin.com/in/nnadichioma/", "Github_ID": "https://github.com/Nnadichioma"},
 
     {"Name": "Kashish Arora", "Slack_username": "Kashish", "Country": "India", "Hobby": "Reading", "Affiliation": "University of Glasgow", "Fav_gene": "CDKN1A (p21) promoter", "Fav_gene_ID": "1026", "Fav_gene_sequence": "GAACATGTCCCAACATGTTG","LinkedIN_ID": "http://www.linkedin.com/in/kashish-a-a6aa90163", "Github_ID": "https://github.com/ka080/Hackbio-stagezero/upload"},
@@ -30,11 +30,11 @@ data = [
 ]
 
 # Convert the list of dictionaries into a DataFrame
-df = pd.DataFrame(data)
+df = pd.DataFrame(Team_info)
 
 # To display final team info
 print("\nHackBio_Team_Leucine_Information:\n")
 print(df.to_string(index=False))
 
-# To calculate the total numbers in the team
+# To calculate the total number of members in the team
 print(f"\nTotal_team_members: {len(df)}")
